@@ -1,21 +1,17 @@
-// Generating filter output values and storing them in a file
-
-// Name: Ankit Saha
-// Roll number: AI21BTECH11004
-
+# EP20btech11010
 #include <stdio.h>
 
 #define N 20
 
-double x(int n) {
-	if (n < 0 || n > 5) return 0;
-	else if (n < 4) return n + 1;
-	else return 6 - n;
+double x(int a) {
+	if (a < 0 || a > 5) return 0;
+	else if (a < 4) return a + 1;
+	else return 6 - a;
 }
 
-double y(int n) {
-	if (n < 0) return 0;
-	else return x(n) + x(n-2) - 0.5 * y(n-1);
+double y(int a) {
+	if (a < 0) return 0;
+	else return x(a) + x(a-2) - 0.5 * y(a-1);
 }
 
 int main() {
