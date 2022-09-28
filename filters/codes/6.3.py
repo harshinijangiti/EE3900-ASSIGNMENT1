@@ -1,8 +1,3 @@
-# Plotting y(n) from the inverse discrete Fourier transform of Y(k)
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy

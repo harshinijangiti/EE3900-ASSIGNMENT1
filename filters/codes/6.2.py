@@ -1,8 +1,3 @@
-# Plotting Y(k) = X(k)H(k)
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy

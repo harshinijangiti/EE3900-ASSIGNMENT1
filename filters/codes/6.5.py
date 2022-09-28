@@ -1,8 +1,3 @@
-# Plotting y(n) using the DFT matrix
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import vectorize, linalg

@@ -1,8 +1,3 @@
-# Plotting y(n) by fast Fourier transform
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
