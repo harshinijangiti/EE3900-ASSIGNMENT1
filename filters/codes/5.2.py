@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import subprocess
-import shlex
 n = np.arange(10)
 fn=(-1/2)**n
 hn1=np.pad(fn, (0,2), 'constant', constant_values=(0))
@@ -11,8 +10,6 @@ plt.title('Filter Impulse Response')
 plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()
-plt.savefig('../figs/hn.pdf')
-plt.savefig('../figs/hn.eps')
-subprocess.run(shlex.split("termux-open ../figs/hn.pdf"))
+plt.savefig('../figs/4.5.png')
 
 
