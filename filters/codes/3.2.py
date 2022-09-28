@@ -1,10 +1,7 @@
-# EP20btech11010
 import numpy as np
 import matplotlib.pyplot as plt
-#If using termux
 import subprocess
-import shlex
-#end if
+
 
 
 
@@ -40,8 +37,4 @@ plt.ylabel('$y(n)$')
 plt.grid()# minor
 
 #If using termux
-plt.savefig('../figs/xnyn.pdf')
-plt.savefig('../figs/xnyn.eps')
-subprocess.run(shlex.split("termux-open ../figs/xnyn.pdf"))
-#else
-#plt.show()
+plt.savefig('../figs/3.2.png')
