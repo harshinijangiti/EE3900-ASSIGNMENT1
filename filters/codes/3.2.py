@@ -1,8 +1,5 @@
 # Plotting x(n) and y(n)
 
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
