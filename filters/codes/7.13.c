@@ -1,8 +1,3 @@
-// Implementation of 8-point FFT
-
-// Name: Ankit Saha
-// Roll number: AI21BTECH11004
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

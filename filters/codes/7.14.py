@@ -1,8 +1,3 @@
-# Plotting the running times of FFT/IFFT and convolution
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import optimize
