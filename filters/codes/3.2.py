@@ -1,39 +1,46 @@
-# Plotting x(n) and y(n)
-
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy
+#If using termux
+import subprocess
+import shlex
+#end if
 
-def x(n):
-    if n < 0 or n > 5:
-        return 0
-    elif n < 4:
-        return n + 1
-    else:
-        return 6 - n
 
-def y(n):
-    if n < 0:
-        return 0
-    else:
-        return x(n) + x(n-2) - 0.5 * y(n-1)
 
-vec_x = scipy.vectorize(x, otypes=[float])
-vec_y = scipy.vectorize(y, otypes=[float])
+x=np.array([1.0,2.0,3.0,4.0,2.0,1.0])
+k = 20
+y = np.zeros(20)
 
-N1 = np.linspace(0, 5, 6)
+
+y[0] = x[0]
+y[1] = -0.5*y[0]+x[1]
+
+for n in range(2,k-1):
+	if n < 6:
+		y[n] = -0.5*y[n-1]+x[n]+x[n-2]
+	elif n > 5 and n < 8:
+		y[n] = -0.5*y[n-1]+x[n-2]
+	else:
+		y[n] = -0.5*y[n-1]
+print(y)
+
+#subplots
 plt.subplot(2, 1, 1)
-plt.stem(N1, vec_x(N1))
+plt.stem(range(0,6),x)
 plt.title('Digital Filter Input-Output')
 plt.ylabel('$x(n)$')
-plt.grid()
+plt.grid()# minor
 
-N2 = np.linspace(0, 19, 20)
+
 plt.subplot(2, 1, 2)
-plt.stem(N2, vec_y(N2))
+plt.stem(range(0,k),y)
 plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
-plt.grid()
+plt.grid()# minor
 
-plt.savefig('../figs/3.2.png')
-plt.show()
+#If using termux
+plt.savefig('../figs/xnyn.pdf')
+plt.savefig('../figs/xnyn.eps')
+subprocess.run(shlex.split("termux-open ../figs/xnyn.pdf"))
+#else
+#plt.show()
