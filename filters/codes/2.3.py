@@ -10,10 +10,10 @@ input_signal, fs = sf.read('Sound_Noise.wav')
 sampl_freq = fs
 
 # Order of the filter
-order = 10
+order = 4
 
 # Cutoff frquency
-cutoff_freq = 3000.0  
+cutoff_freq = 4000.0  
 
 # Digital Frequency
 Wn = 2 * cutoff_freq / sampl_freq  
