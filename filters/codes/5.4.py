@@ -23,4 +23,4 @@ plt.ylabel('$h(n)$')
 plt.grid()# minor
 
 #If using termux
-plt.savefig('../figs/5.4.pdf')
+plt.savefig('../figs/5.4.png')
