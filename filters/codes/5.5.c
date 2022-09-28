@@ -1,10 +1,4 @@
-// Generating the toeplitz matrix corresponding to h(n)
-
-// Name: Ankit Saha
-// Roll number: AI21BTECH11004
-
 #include <stdio.h>
-
 #define N 20
 
 double delta(int n) {
