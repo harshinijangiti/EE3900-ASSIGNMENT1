@@ -1,8 +1,3 @@
-# Plotting the magnitude of the discrete-time Fourier transform of x(n)
-
-# Name: Ankit Saha
-# Roll number: AI21BTECH11004
-
 import numpy as np
 import matplotlib.pyplot as plt
 
