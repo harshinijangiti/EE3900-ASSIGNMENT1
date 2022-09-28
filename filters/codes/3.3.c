@@ -1,4 +1,4 @@
-# EP20btech11010
+// EP20btech11010
 #include <stdio.h>
 
 #define N 20
