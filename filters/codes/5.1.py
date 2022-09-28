@@ -1,29 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy
-
-def delta(n):
-    if n == 0:
-        return 1
-    else:
-        return 0
-
-def u(n):
-    if n >= 0:
-        return 1
-    else:
-        return 0
-
-def h(n):
-    return -4*delta(n) + 2*delta(n-1) + 5*u(n)*(-1/2)**n
-
-vec_h = scipy.vectorize(h, otypes=[float])
-
-N = np.linspace(0, 19, 20)
-plt.stem(N, vec_h(N))
+import subprocess
+import shlex
+n = np.arange(10)
+fn=(-1/2)**n
+hn1=np.pad(fn, (0,2), 'constant', constant_values=(0))
+hn2=np.pad(fn, (2,0), 'constant', constant_values=(0))
+plt.stem(np.arange(12), hn1+hn2)
+plt.title('Filter Impulse Response')
 plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()
-plt.title('Filter Impulse Response')
-plt.savefig('../figs/5.1.png')
-plt.show()
+plt.savefig('../figs/4.5.png')
+
+
