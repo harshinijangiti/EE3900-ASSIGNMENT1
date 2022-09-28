@@ -220,8 +220,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-OUTPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
 OUTPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.pdf
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
+OUTPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/main.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
@@ -357,6 +363,9 @@ INPUT ./figs/5.4.png
 INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/./figs/5.5.png
 INPUT ./figs/5.5.png
 INPUT ./figs/5.5.png
+INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/./figs/5.9.png
+INPUT ./figs/5.9.png
+INPUT ./figs/5.9.png
 INPUT /home/harshini/Desktop/GVV/EE3900-ASSIGNMENT1/filters/./figs/6.1.png
 INPUT ./figs/6.1.png
 INPUT ./figs/6.1.png
@@ -414,7 +423,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
